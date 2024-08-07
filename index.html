@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Promo Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Promo Code Generator</h1>
+        <div class="form-group">
+            <label>Select Game:</label>
+            <div class="radio-buttons">
+                <label class="radio-button">
+                    <input type="radio" name="game" value="1" />
+                    <span>Riding Extreme 3D</span>
+                    <img src="game1.jpg" alt="Riding Extreme 3D">
+                </label>
+                <label class="radio-button">
+                    <input type="radio" name="game" value="2" />
+                    <span>Chain Cube 2048</span>
+                    <img src="game2.png" alt="Chain Cube 2048">
+                </label>
+                <label class="radio-button">
+                    <input type="radio" name="game" value="3" />
+                    <span>My Clone Army</span>
+                    <img src="game3.png" alt="My Clone Army">
+                </label>
+                <label class="radio-button">
+                    <input type="radio" name="game" value="4" />
+                    <span>Train Miner</span>
+                    <img src="game4.png" alt="Train Miner">
+                </label>
+            </div>
+        </div>
+        <button id="startBtn">Generate Keys</button>
+
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <p id="progressText">0%</p>
+            <p id="progressLog">Starting...</p>
+        </div>
+
+        <div id="keyContainer" class="hidden">
+            <h2 id="generatedKeysTitle" class="hidden">Generated Keys</h2>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+        </div>
+
+        <p id="keyCountLabel">Number of keys: 4</p>
+
+        <button id="generateMoreBtn">Generate More Keys</button>
+        <button id="creatorChannelBtn">Contact Creator</button>
+        <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
+        
+        <div class="footer">
+            
+            <button id="telegramChannelBtn">Check out Our Telegram Channel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
